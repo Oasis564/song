@@ -41,12 +41,17 @@ def Slines_function():
         if data[i][0].lower() == "s":
             print(data[i])
  
+def no_words_function():
+    f = open("Believer.txt", 'r')
+    data = f.read()
+    split = data.split()
+    print(len(split))
 
 if __name__ == "__main__":
-    # opening_function()
-    # characters_function()
-    # word_function()
-    # lowerletter_function()
+    opening_function()
+    characters_function()
+    word_function()
+    lowerletter_function()
     Slines_function()
-    # no_words_function()
+    no_words_function()
     
